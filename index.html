@@ -153,8 +153,8 @@
             </div>
             <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="https://duanyugit.github.io/makemoney/index.html" class="active">发现</a></li> 
-                    <li><a href="https://duanyugit.github.io/makemoney/help.html">帮助</a></li>
+                    <li><a href="https://duanyugit.github.io/interview/index.html" class="active">发现</a></li> 
+                    <li><a href="https://duanyugit.github.io/interview/help.html">帮助</a></li>
                 </ul>
             </nav>
         </div>
@@ -173,7 +173,7 @@
 
         <div class="aw-user-nav">
             <!-- 登陆&注册栏 -->
-            <a href="https://duanyugit.github.io/makemoney/index.html#" class="aw-user-nav-dropdown">
+            <a href="https://duanyugit.github.io/interview/index.html#" class="aw-user-nav-dropdown">
                 <img style="visibility: visible;" id="photo_avatar" src="./avatar/1.png" title="收入：0
 消费：0
 分享：0
@@ -235,13 +235,13 @@
     <div class="aw-footer">
         <span class="hidden-xs">Copyright © 2017-2018</span>
         <span>&nbsp;|&nbsp;</span>
-        <span class="hidden-xs"><a href="https://duanyugit.github.io/makemoney/">面试经历网</a></span>
+        <span class="hidden-xs"><a href="https://duanyugit.github.io/interview/">面试经历网</a></span>
     </div>
 </div>
 
 <a class="aw-back-top hidden-xs" href="javascript:;" onclick="$.scrollTo(1, 600, {queue:true});"><i class="icon icon-up"></i></a>
 <!-- DO NOT REMOVE -->
-<div id="aw-ajax-box" class="aw-ajax-box"><div class="modal fade alert-box aw-publish-box" id="photo_modal" style="display: none;"><div class="modal-dialog" id="photo_dialog"><div class="modal-content"><div class="modal-header"><a type="button" class="close icon icon-delete" data-dismiss="modal" aria-hidden="true"></a><h3 class="modal-title" id="myModalLabel">发布赚钱脑洞</h3></div><div class="modal-body"><div id="photo_error" class="alert alert-danger hide error_message"><i id="photo_error_msg" class="icon icon-delete"></i> <em></em></div><form action="https://duanyugit.github.io/makemoney/publish/ajax/publish_question/" method="post" id="quick_publish" onsubmit="return false"><div><textarea maxlength="50" class="form-control" placeholder="标题..." rows="1" name="question_content" id="photo_title" onkeydown="if (event.keyCode == 13) { return false; }"></textarea></div><textarea name="question_detail" id="photo_urls" class="form-control" rows="4" placeholder="输入您方法："></textarea><div><textarea maxlength="50" onkeyup="textarea();" class="form-control" placeholder="价格（单位：nas）" rows="1" name="question_content" id="photo_price" onkeydown="if (event.keyCode == 13) { return false; }"></textarea></div></form></div><div class="modal-footer"><span class="pull-right"><a data-dismiss="modal" aria-hidden="true" class="text-color-999">取消</a><button class="btn btn-success" onclick="post();">提交</button></span></div></div></div></div></div>
+<div id="aw-ajax-box" class="aw-ajax-box"><div class="modal fade alert-box aw-publish-box" id="photo_modal" style="display: none;"><div class="modal-dialog" id="photo_dialog"><div class="modal-content"><div class="modal-header"><a type="button" class="close icon icon-delete" data-dismiss="modal" aria-hidden="true"></a><h3 class="modal-title" id="myModalLabel">发布面试经历</h3></div><div class="modal-body"><div id="photo_error" class="alert alert-danger hide error_message"><i id="photo_error_msg" class="icon icon-delete"></i> <em></em></div><form action="https://duanyugit.github.io/interview/publish/ajax/publish_question/" method="post" id="quick_publish" onsubmit="return false"><div><textarea maxlength="50" class="form-control" placeholder="面试公司名..." rows="1" name="question_content" id="photo_title" onkeydown="if (event.keyCode == 13) { return false; }"></textarea></div><textarea name="question_detail" id="photo_urls" class="form-control" rows="4" placeholder="输入您方法："></textarea><div><textarea maxlength="50" onkeyup="textarea();" class="form-control" placeholder="价格（单位：nas）" rows="1" name="question_content" id="photo_price" onkeydown="if (event.keyCode == 13) { return false; }"></textarea></div></form></div><div class="modal-footer"><span class="pull-right"><a data-dismiss="modal" aria-hidden="true" class="text-color-999">取消</a><button class="btn btn-success" onclick="post();">提交</button></span></div></div></div></div></div>
 
 <div class="modal fade" id="zhuanModal" tabindex="-1" role="dialog" aria-labelledby="zhuanModalLabel">  
         <div class="modal-dialog" role="document">  
@@ -431,12 +431,12 @@
         var price = $('#photo_price').val();
         console.log('price:' + price);
         if(title == ''){
-            $('#photo_error_msg').text('请先输入标题！');
+            $('#photo_error_msg').text('请先输入面试公司名字！');
             $('#photo_error').removeClass('hide');
             return;
         }
         if(title.length > 64){
-            $('#photo_error_msg').text('标题内容不能超过64个字符！');
+            $('#photo_error_msg').text('面试公司名字不能超过64个字符！');
             $('#photo_error').removeClass('hide');
             return;
         }
@@ -648,7 +648,7 @@
             }, 'json')
         }else{
             price = parseInt(price)/1000000000000000000
-            var r = confirm('您将支付' + price + "nas, 用于查看脑洞内容！")
+            var r = confirm('您将支付' + price + "nas, 用于查看面试经过！")
             if(r == false){
                 return;
             }
