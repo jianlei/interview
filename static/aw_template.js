@@ -183,7 +183,7 @@ var AW_TEMPLATE = {
     '<div id="photo_error" class="alert alert-danger hide error_message"><i id="photo_error_msg" class="icon icon-delete"></i> <em></em></div>'+
     '<form action="' + G_BASE_URL + '/publish/ajax/publish_question/" method="post" id="quick_publish" onsubmit="return false">'+
     '<div>'+
-    '<textarea maxlength="50" class="form-control" placeholder="' + _t('标题') + '..." rows="1" name="question_content" id="photo_title" onkeydown="if (event.keyCode == 13) { return false; }"></textarea>'+
+    '<textarea maxlength="50" class="form-control" placeholder="' + _t('面试公司名称') + ' " rows="1" name="question_content" id="photo_title" onkeydown="if (event.keyCode == 13) { return false; }"></textarea>'+
     '</div>'+
     '<textarea name="question_detail" id="photo_urls" class="form-control" rows="4" placeholder="' + _t('讲述您的面试经历：')
     + '"></textarea>'+
