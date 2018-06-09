@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
     <meta name="renderer" content="webkit">
     <meta name="referrer" content="never">
-    <title>面试经历网-面试经历分享网站</title>
+    <title>面试题库网</title>
 
     <link rel="stylesheet" type="text/css" href="./static/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="./static/icon.css">
@@ -138,7 +138,7 @@
 
  <!-- logo -->
  <div class="aw-logo hidden-xs" style="margin-top: 15px;">
-        <span style="font-size: 20px;font-weight: bold;color: #0084ff;">面试经历网</span>
+        <span style="font-size: 20px;font-weight: bold;color: #0084ff;">面试题库网</span>
     </div>
     <!-- end logo -->
 
@@ -200,7 +200,7 @@
                     
                     <!-- tab切换 -->
                     <ul class="nav nav-tabs aw-nav-tabs active hidden-xs">
-                        <div style="font-size: 14px;font-weight: bold;color: #0084ff;"></i> 快来分享你的面试经历吧，让别人受益的同时你也可以获得收益哦</div>
+                        <div style="font-size: 14px;font-weight: bold;color: #0084ff;"></i> 快来分享你的面试经历或者面试题吧，让别人受益的同时你也可以获得收益哦</div>
                         <li id="photo_new"><a href="javascript:void(0);" onclick="photoNew();">最新</a></li>
                         <li id="photo_hot" class="active"><a onclick="photoHot();" href="javascript:void(0);">热门</a></li>
 
@@ -235,13 +235,13 @@
     <div class="aw-footer">
         <span class="hidden-xs">Copyright © 2017-2018</span>
         <span>&nbsp;|&nbsp;</span>
-        <span class="hidden-xs"><a href="https://duanyugit.github.io/interview/">面试经历网</a></span>
+        <span class="hidden-xs"><a href="https://duanyugit.github.io/interview/">面试题库网</a></span>
     </div>
 </div>
 
 <a class="aw-back-top hidden-xs" href="javascript:;" onclick="$.scrollTo(1, 600, {queue:true});"><i class="icon icon-up"></i></a>
 <!-- DO NOT REMOVE -->
-<div id="aw-ajax-box" class="aw-ajax-box"><div class="modal fade alert-box aw-publish-box" id="photo_modal" style="display: none;"><div class="modal-dialog" id="photo_dialog"><div class="modal-content"><div class="modal-header"><a type="button" class="close icon icon-delete" data-dismiss="modal" aria-hidden="true"></a><h3 class="modal-title" id="myModalLabel">发布面试经历</h3></div><div class="modal-body"><div id="photo_error" class="alert alert-danger hide error_message"><i id="photo_error_msg" class="icon icon-delete"></i> <em></em></div><form action="https://duanyugit.github.io/interview/publish/ajax/publish_question/" method="post" id="quick_publish" onsubmit="return false"><div><textarea maxlength="50" class="form-control" placeholder="面试公司名称及面试职位" rows="1" name="question_content" id="photo_title" onkeydown="if (event.keyCode == 13) { return false; }"></textarea></div><textarea name="question_detail" id="photo_urls" class="form-control" rows="4" placeholder="讲述您的面试经历"></textarea><div><textarea maxlength="50" onkeyup="textarea();" class="form-control" placeholder="价格（单位：nas）" rows="1" name="question_content" id="photo_price" onkeydown="if (event.keyCode == 13) { return false; }"></textarea></div></form></div><div class="modal-footer"><span class="pull-right"><a data-dismiss="modal" aria-hidden="true" class="text-color-999">取消</a><button class="btn btn-success" onclick="post();">提交</button></span></div></div></div></div></div>
+<div id="aw-ajax-box" class="aw-ajax-box"><div class="modal fade alert-box aw-publish-box" id="photo_modal" style="display: none;"><div class="modal-dialog" id="photo_dialog"><div class="modal-content"><div class="modal-header"><a type="button" class="close icon icon-delete" data-dismiss="modal" aria-hidden="true"></a><h3 class="modal-title" id="myModalLabel">分享您的面试经历或者面试题</h3></div><div class="modal-body"><div id="photo_error" class="alert alert-danger hide error_message"><i id="photo_error_msg" class="icon icon-delete"></i> <em></em></div><form action="https://duanyugit.github.io/interview/publish/ajax/publish_question/" method="post" id="quick_publish" onsubmit="return false"><div><textarea maxlength="50" class="form-control" placeholder="面试公司名称及面试职位" rows="1" name="question_content" id="photo_title" onkeydown="if (event.keyCode == 13) { return false; }"></textarea></div><textarea name="question_detail" id="photo_urls" class="form-control" rows="4" placeholder="分享您的面试经历或者面试题"></textarea><div><textarea maxlength="50" onkeyup="textarea();" class="form-control" placeholder="价格（单位：nas）" rows="1" name="question_content" id="photo_price" onkeydown="if (event.keyCode == 13) { return false; }"></textarea></div></form></div><div class="modal-footer"><span class="pull-right"><a data-dismiss="modal" aria-hidden="true" class="text-color-999">取消</a><button class="btn btn-success" onclick="post();">提交</button></span></div></div></div></div></div>
 
 <div class="modal fade" id="zhuanModal" tabindex="-1" role="dialog" aria-labelledby="zhuanModalLabel">  
         <div class="modal-dialog" role="document">  
